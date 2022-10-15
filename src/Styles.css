@@ -44,9 +44,8 @@ header:hover{
     position: relative;
 }
 
-#hover-nu:hover .sub-menu-nu {
-    color: red;
-    visibility: visible;
+#hover-nu:hover #sub-menu-nu {
+    visibility: visible !important;
     z-index: 10;
 }
 
@@ -55,7 +54,7 @@ header:hover{
     width: 150px;
     border: 1px solid #ccc;
     padding: 10px 0 10px 20px;
-    visibility: visible;
+    visibility: hidden;
     top: 60px;
     transition: 0.3s;
     background: #00FFFF;
