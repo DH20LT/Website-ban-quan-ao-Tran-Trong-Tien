@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fontawesome/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.css    ">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="Logo">
+            <img src="images/logoIVYmoda.png" >
+        </div>
+        <div class="Menu">
+            <li ><a href="">NỮ</a>
+            <ul class="Sub-menu">
+                <li><a href="">Hàng mới về</a> </li>
+                <li><a href="">Collection</a></li>
+                <li><a href="">Áo</a></li>
+                <ul>
+                    <li><a href="">Áo sơ mi</a></li>
+                    <li><a href="">Áo thun</a></li>
+                    <li><a href="">Áo khoác</a></li>
+                    <li><a href="">Áo len</a></li>
+                </ul>
+            </li>
+            <li><a href="">Quần</a></li>
+                <ul>
+                    <li><a href="">Quần jean</a></li>
+                    <li><a href="">Quần lửng</a></li>
+                    <li><a href="">Quần dài</a></li>
+                </ul>
+            </li>
+        </ul>
+            
+                
+
+            <li><a href="">NAM</a></li>
+            <li><a href="">TRẺ EM</a></li>
+            <li><a href="">SALE</a></li>
+            <li><a href="">KHẨU TRANG</a></li>
+            <li><a href="">BỘ SƯU TẬP</a></li>
+            <li><a href="">THÔNG TIN</a></li>
+        </div>
+        <div class="Other">
+            <li><input placeholder="Tìm kiếm" type="text"><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li><i class="fa-solid fa-paw"></i></li>
+            <li><i class="fa-solid fa-user"></i></li>
+            <li><i class="fa-solid fa-cart-shopping"></i></li>
+        </div>
+    </header>
+    <section id="section">
+        <div class="Slider">
+            <div class="Slider_img">
+                <input type="radio" name = "inputslider" id="img1">
+                <input type="radio" name = "inputslider" id="img2">
+                <input type="radio" name = "inputslider" id="img3">
+    
+                <img src="/src/images/Backgroud.jpg" >
+                <img src="/src/images/Backgroud2.jpg" >
+                <img src="/src/images/Backgroud3.png" >
+            </div>
+            <div class="Naviggation-manual">
+                <label for="img1" class="manual-btn"></label>
+                <label for="img2" class="manual-btn"></label>
+                <label for="img3" class="manual-btn"></label>
+            </div>
+        </div>
+    </section>
+    <!-- <div class="Slider">
+        <div class="Slider_img">
+            <input type="radio" name = "inputslider" id="img1">
+            <input type="radio" name = "inputslider" id="img2">
+            <input type="radio" name = "inputslider" id="img3">
+
+            <img src="/src/images/Backgroud.jpg" >
+            <img src="/src/images/Backgroud2.jpg" >
+            <img src="/src/images/Backgroud3.png" >
+        </div>
+        <div class="Naviggation-manual">
+            <label for="img1" class="manual-btn"></label>
+            <label for="img2" class="manual-btn"></label>
+            <label for="img3" class="manual-btn"></label>
+        </div> -->
+    </div>
+     <section class="app-container">
+        <p>Tải ứng dụng IVY moda</p>
+        <div class="app-google">
+            <img src="/src/images/Appstore.png" >
+            <img src="/src/images/Googleplay.png" alt="">
+        </div>
+        <p>Nhận bản tin từ IVY moda</p>
+        <input type="text" placeholder="Nhập email của bạn...">
+     </section>
+     <div class="footer-top">
+        <li><a href=""><img src="/src/images/DaThongBaoVoiBoConggThuong.png" ></a></li>
+        <li><a href=""></a>Liên Hệ</li>
+        <li><a href=""></a>Tuyển Dụng</li>
+        <li><a href=""></a>Giới thiệu</li>
+        <li>
+            <a href="https://www.facebook.com/thoitrangivymoda/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/ivy_moda/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/user/thoitrangivymoda"><i class="fa-brands fa-youtube"></i></a>
+        </li>
+     </div>
+     <div class="footer-center">
+        <p>Công ty Cổ phần Dự Kim với số đăng ký kinh doanh : 0862 255 226 <br>
+        Địa chỉ đăng ký: Tổ dân phố Tháp, p.Đại Mỗ, Q.Nam Từ Liêm, TP.Hà Nội, Việt Nam - 0844 135 103 <br>
+        Đặt hàng online : <b>0772 033 290</b></p>
+     </div>
+     <div class="footer-bottom">
+        ©IVYmoda All rights reserved
+     </div>   
+     
+</body>
+<script>
+    const imgPostion = document.querySelectorAll(".Slider_img img")
+    const imgContainer = document.querySelector('.Slider_img')
+    let index = 0
+    let imgNumber = imgPostion.length
+     imgPostion.forEach(function(image,index){
+     image.style.left = index*100 + "%"
+     })
+     function imgSlide(){
+        index++;
+        if (index>=imgNumber) {index = 0}
+         {imgContainer.style.left=   "-" +index*100+ "%"}
+     }
+      setInterval(imgSlide,5000)
+
+    // sticky header 
+    const header = document.querySelectorAll("header")
+    window.addEventListener("scroll",function(){
+        x = window.pageYOffset
+        console.log(x)
+        if(x > 0){
+            header.classList.add("sticky")
+        }
+        else{
+            header.classList.remove("sticky")
+        }
+    })
+
+    
+</script>
+
+</html>
