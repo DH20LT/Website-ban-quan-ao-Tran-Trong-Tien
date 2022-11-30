@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Contract Form</title>
+    <link rel="stylesheet" href="./fontawesome/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.css">
+    <link rel="stylesheet" href="StykesContracUs.css">
+</head>
+<body>
+    <!---alert message start-->
+    <!-- <div class="alret-success">
+        <span>Message Sent! Thank you for contracting us.</span>
+    </div> -->
+    <!-- <div class="alert-error">
+        <span>Something went wrong! please try agian. </span>
+    </div> -->
+   <!--Contract section start --> 
+   <div class="contract-section">
+    <div class="contract-infor">
+        <div><i class="fa-sharp fa-solid fa-location-dot"></i>499 Nguyễn Văn Trỗi, Phường 5 , Bến Tre </div>
+        <div><i class="fa-solid fa-envelope"></i>onlycontract@gmail.com</div>
+        <div><i class="fa-solid fa-phone"></i>086554127952</div>
+        <div><i class="fa-solid fa-clock"></i>Thứ 2 - thứ 6 : 8:00 sáng - 5:00 chiều </div>    
+    </div>
+    <div class="contract-form">
+        <h2>Contract Us</h2>
+        <form class="contract" onsubmit="sendEmail(); reset(); return false;" action="" method="post">
+            <input type="text" name="name" id="name" class="text-box" placeholder="Your Name" required>
+            <input type="email" name="email" id="email" class="text-box" placeholder="Your email" required>
+            <textarea name="message" row="5" id="message" placeholder="Your Message" required></textarea>
+            <input type="submit" name="submit" class="send-btn" value="Send">
+        </form>
+        
+    </div>
+   </div>
+
+   <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "hoangky753@gmail.com",
+                Password : "A2625FBD366696942F031A17703A5192C5D5",
+                To : "hoangky753@gmail.com",
+                From : "hoangky753@gmail.com",
+                Subject : "New Contact Form Enquiry",
+                Body : "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Message: " + document.getElementById("message").value
+            }).then(
+            message => alert("Message Sent Successfully!")
+            );
+        }
+    </script>
+</body>
+</html>

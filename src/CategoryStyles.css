@@ -1,0 +1,45 @@
+.cartegory{
+    width: 100%;
+}
+:root{
+    --main-text-font: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    padding: 0px 200px;
+}
+
+.cartegory-container{
+    width: 100%;
+}
+
+.icon-login{
+    cursor: pointer;
+}
+.category-right-content-item{
+    width: calc(25% -12px);
+    text-align: center;
+    padding: 12px 0;
+}
+.category-right-content-item h1 {
+font-size: 11px;
+font-family: var(--main-text-font);
+margin-top: 6px;
+color: #333;
+}
+.category-right-content-item img{
+    width: 100%;
+}
+.category-right-content-item p {
+    font-size: 12px;
+}
+.category-right-bottom{
+    justify-content: space-between;
+    margin: 30px 0 20px;
+    width: 100%;
+}
+.category-right-bottom p {
+    font-family: var(--main-text-font);
+    font-size: 11px;
+}

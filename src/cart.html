@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fontawesome/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.css    ">
+    <link rel="stylesheet" href="CategoryStyles.css">
+    <link rel="stylesheet" href="Styles.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="Logo">
+            <img src="images/logoIVYmoda.png" >
+        </div>
+        <div class="Menu">
+            <li id="hover-nu"><a href="">NỮ</a>
+                <ul id="sub-menu-nu" class="Sub-menu">
+                    <li><a href="">Hàng mới về</a> </li>
+                    <li><a href="">Collection</a></li>
+                    <li><a href="">Áo</a>
+                        <ul>
+                            <li><a href="">Áo sơ mi</a></li>
+                            <li><a href="">Áo thun</a></li>
+                            <li><a href="">Áo khoác</a></li>
+                            <li><a href="">Áo len</a></li>
+                        </ul>
+                    </li>
+                    <li id="hover-quan"><a href="">Quần</a>
+                        <ul>
+                            <li><a href="">Quần jean</a></li>
+                            <li><a href="">Quần lửng</a></li>
+                            <li><a href="">Quần dài</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+                </ul>
+            </li>
+            
+        </ul>
+            
+                
+
+            <li><a href="">NAM</a></li>
+            <li><a href="">TRẺ EM</a></li>
+            <li><a href="">SALE</a></li>
+            <li><a href="">KHẨU TRANG</a></li>
+            <li><a href="">BỘ SƯU TẬP</a></li>
+            <li><a href="">THÔNG TIN</a></li>
+        </div>
+        <div class="Other">
+            <li><input placeholder="Tìm kiếm" type="text"><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li><i class="fa-solid fa-paw"></i></li>
+            <li><i class="icon-login fa-solid fa-user"></i></li>
+            <li><i class="fa-solid fa-cart-shopping"></i></li>
+        </div>
+    </header>
+    <section>
+      <!-- ------------------------Cart -->
+      <section class="cart">
+        <div class="container">
+            <div class="cart-top-wrap">
+                <div class="cart-top">
+                    <div class="cart-top-cart cart-top-item">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="cart-top-address cart-top-item">
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="cart-top-payment cart-top-item">
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                    </div>
+            </div>          
+        </div>
+        <div class="container">
+            <div class="cart-content row">
+                <div class="cart-content-left">
+                    <table>
+                        <tr>
+                            <th>Sản Phẩm</th>
+                            <th> Tên Sản Phẩm</th>
+                            <th>Màu</th>
+                            <th>Size</th>
+                            <th>SL</th>
+                            <th>Thành Tiền</th>
+                            <th>Xóa</th>
+                        </tr>
+                        <tr>
+                            <td><img src="/src/images/sp1.jpg" alt=""></td>
+                            <td><p>SET ÁO BLAZER KẺ VÀ QUẦN LỬNG</p></td>
+                            <td><img src="/src/images/red.png" alt=""></td>
+                            <td><p>L</p></td>
+                            <td><input type="number" value="1"></td>
+                            <td><p>70.000 <sub>đ</sub></p></td>
+                            <td><span>X</span></td>
+                        </tr>
+                        <tr>
+                            <td><img src="/src/images/sp4.jpg" alt=""></td>
+                            <td><p>SET ÁO BLAZER KẺ VÀ QUẦN LỬNG</p></td>
+                            <td><img src="/src/images/red.png" alt=""></td>
+                            <td><p>L</p></td>
+                            <td><input type="number" value="1"></td>
+                            <td><p>70.000 <sub>đ</sub></p></td>
+                            <td><span>X</span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cart-content-right">
+                    <table>
+                        <tr>
+                            <th colspan="2">TỔNG TIỀN GIỎ HÀNG</th> 
+                        </tr>
+                        <tr>
+                            <td>TỔNG SẢN PHẨM</td>
+                            <Td>2</Td>
+                        </tr>
+                        <tr>
+                            <td>TỔNG TIỀN HÀNG</td>
+                            <td><p>70.000 <sup>đ</sup></p></td>
+                        </tr>
+                        <tr>
+                            <td>TẠM TÍNH</td>
+                            <td><p style="color: black; font-weight: bold">70.000 <sup>đ</sup></p></td>
+                        </tr>
+                    </table>
+                    <div class="cart-content-right-text">
+                        <p>Bạn sẽ được miễn phí ship khi đơn hàng của bạn có tổng giá trị trên 2.000.000 đ</p>
+                        <p style="color: red; font-weight: bold;">Mua thêm <span style="font-size: 18px">130.000đ</span> để được miễn phí SHIP</p>
+                    </div>
+                    <div class="cart-content-right-button">
+                        <button>TIẾP TỤC MUA SẮM</button>
+                        <button>THANH TOÁN</button>
+                    </div>
+                    <div class="cart-content-right-button-dangnhap">
+                        <p>TÀI KHOẢN</p> <br>
+                        <p>Hãy <a href="">Đăng nhập</a> tài khoản để tích điểm thành viên</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+<section class="footer">
+    <section class="app-container">
+       <p>Tải ứng dụng IVY moda</p>
+       <div class="app-google">
+           <img src="/src/images/Appstore.png" >
+           <img src="/src/images/Googleplay.png" alt="">
+       </div>
+       <p>Nhận bản tin từ IVY moda</p>
+       <input type="text" placeholder="Nhập email của bạn...">
+    </section>
+    <div class="footer-top">
+       <li><a href=""><img src="/src/images/DaThongBaoVoiBoConggThuong.png" ></a></li>
+       <li><a href=""></a>Liên Hệ</li>
+       <li><a href=""></a>Tuyển Dụng</li>
+       <li><a href=""></a>Giới thiệu</li>
+       <li>
+           <a href="https://www.facebook.com/thoitrangivymoda/"><i class="fa-brands fa-facebook"></i></a>
+           <a href="https://www.instagram.com/ivy_moda/"><i class="fa-brands fa-instagram"></i></a>
+           <a href="https://www.youtube.com/user/thoitrangivymoda"><i class="fa-brands fa-youtube"></i></a>
+       </li>
+    </div>
+    <div class="footer-center">
+       <p>Công ty Cổ phần Dự Kim với số đăng ký kinh doanh : 0862 255 226 <br>
+       Địa chỉ đăng ký: Tổ dân phố Tháp, p.Đại Mỗ, Q.Nam Từ Liêm, TP.Hà Nội, Việt Nam - 0844 135 103 <br>
+       Đặt hàng online : <b>0772 033 290</b></p>
+    </div>
+    <div class="footer-bottom">
+       ©IVYmoda All rights reserved
+    </div>
+    <div class="modal-login js-modal-login">
+       <div class="modal-login-container js-modal-login-container">
+           <div class="modal-login-close js-modal-login-close">
+               <i class="fa fa-xmark"></i>
+           </div>
+           <div class="modal-login-header">
+               ĐĂNG NHẬP
+           </div>
+           <div class="modal-login-body">
+               <label for="login-account" class="modal-login-label">
+                   <div class="icon-modal-login-account">
+                       <i class="fa-solid fa-user"></i>
+                   </div>
+                   <div class="modal-login-account-text">
+                       <p>Tài khoản</p>
+                   </div>
+               </label>
+               <input id="login-account"type="text" required="" class="modal-login-input js-modal-account-login-input" placeholder="">
+               <div class="login-account-warning js-login-account-warning">
+                   <div class="icon-login-account-warning">
+                       <i class="fa-solid fa-circle-exclamation"></i>
+                   </div>
+                   <div class="    ">
+                       <p>Hãy nhập tài khoản</p>
+                   </div>
+               </div>
+               <label for="login-password" class="modal-login-label">
+                   <div class="iicon-modal-login-account">
+                       <i class="fa-solid fa-lock"></i>
+                   </div>
+                   <div class="modal-login-account-text">
+                       <p>Mật khẩu</p>
+                   </div>
+               </label>
+               <input id="login-password" type="password" required="" class="modal-login-input js-modal-password-login-input" placeholder="">
+               <div class="icon-login-other">
+
+               </div>
+               <div class="checkbox-cover">
+                   <div class="checkbox-icon">
+                       <input type="checkbox" name="Save-Login" id="checkbox-save-login">
+                   </div>
+                   <div class="checkbox-save-login-text">
+                       <p>Lưu đăng nhập</p>
+                   </div>
+               </div>
+               <div class="login-ok-flex">
+                   <button class="js-login-submit" id="login-ok">
+                       <i class="fa fa-arrow-right"></i>
+                   </button>
+               </div>
+           </div>
+           <footer class="modal-login-footer">
+               <p class="modal-login-help">Chưa có tài khoản? <a class="next-register js-next-register" href="#">Đăng ký nhanh</a></p>
+           </footer>
+       </div>
+   </div>
+   <div class="modal-register js-modal-register">
+       <div class="modal-register-container js-modal-register-container">
+           <div class="modal-register-close js-modal-register-close">
+               <i class="fa fa-xmark"></i>
+           </div>
+           <div class="modal-register-header">
+               ĐĂNG KÝ
+           </div>
+           <div class="modal-register-body">
+               <label for="register-account" class="modal-register-label">
+                   <div class="icon-modal-register-account">
+                       <i class="fa-solid fa-user"></i>
+                   </div>
+                   <div class="modal-register-account-text">
+                       <p>Tài khoản</p>
+                   </div>
+               </label>
+               <input id="register-account"type="text" required="" class="modal-register-input" placeholder="">
+               <label for="register-password" class="modal-register-label">
+                   <div class="iicon-modal-register-account">
+                       <i class="fa-solid fa-lock"></i>
+                   </div>
+                   <div class="modal-register-account-text">
+                       <p>Mật khẩu</p>
+                   </div>
+               </label>
+               <input id="register-password" type="password" required="" class="modal-register-input" placeholder="">
+               <label for="register-password" class="modal-register-label">
+                   <div class="iicon-modal-register-account">
+                       <i class="fa-solid fa-lock"></i>
+                   </div>
+                   <div class="modal-register-account-text">
+                       <p>Xác nhận mật khẩu</p>
+                   </div>
+               </label>
+               <input id="register-password" type="password" required="" class="modal-register-input" placeholder="">
+               <label for="register-password" class="modal-register-label">
+                   <div class="iicon-modal-register-account">
+                       <i class="fa-solid fa-envelope"></i>
+                   </div>
+                   <div class="modal-register-account-text">
+                       <p>Địa chỉ email</p>
+                   </div>
+               </label>
+               <input id="register-password" type="email" required="" class="modal-register-input" placeholder="">
+               <div class="icon-login-other">
+               </div>
+               <div class="register-ok-flex">
+                   <button id="register-ok">
+                       <i class="fa fa-arrow-right"></i>
+                   </button>
+               </div>
+           </div>
+           <footer class="modal-register-footer">
+           </footer>
+       </div>
+   </div>
+   </section>
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./fontawesome/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.css    ">
-    <link rel="stylesheet" href="Styles.css">
     <link rel="stylesheet" href="CategoryStyles.css">
+    <link rel="stylesheet" href="Styles.css">
     <title>Document</title>
 </head>
 <body>
@@ -57,44 +57,89 @@
             <li><i class="fa-solid fa-cart-shopping"></i></li>
         </div>
     </header>
-    <section id="section">
-        <div class="Slider">
-            <div class="Slider_img">
-                <input type="radio" name = "inputslider" id="img-1">
-                <input type="radio" name = "inputslider" id="img-2">
-                <input type="radio" name = "inputslider" id="img-3">
 
-                <div class="slide first">
-                    <img class="main-img" src="/src/images/Backgroud.jpg" >
+    <!--- ----------------------Category ----------------->
+    <section class="cartegory">
+        <div class="container">
+            <!-- <div class="cartegory-top row">
+                <p>Trang chủ</p> <span>&#8594;</span> <p>Nữ</p> <span>&#8594;</span> <p>Hàng Mới về</p>
+            </div> -->
+            <div class="cartegory-container">
+                <div class="row">
+                    <div class="category-left">
+                        <ul>
+                            <li class="category-left"><a href=""></a>
+                    </div> 
+                    <div class="category-right row">
+                       <div class="category-right-top-item">
+                        <p>HÀNG NỮ MỚI VỀ</p>
+                       </div> 
+                       <div class="category-right-top-item">
+                            <button><span>Bộ lọc</span><i><i class="fa-solid fa-sort-down"></i></i></button>
+                       </div>
+                       <div class="category-right-top-item">
+                            <select name="" id="">
+                                <option value="">Sắp xếp</option>
+                                <option value="">Giá cao đến thấp</option>
+                                <option value="">Giá thấp đến caoo</option>
+                            </select>
+                       </div>
+                    </div>
+                    <div class="category-right-content row">
+                        <div class="category-right-content-item">
+                            <img src="/src/images/sp1.jpg" alt="">
+                            <h1>SET ÁO BLAZER KẺ VÀ QUẦN LỬNG</h1>
+                            <p>70.0000 <sup>đ</sup></p>
+                        </div>
+                        <div class="category-right-content-item">
+                            <img src="/src/images/sp2.jpg" alt="">
+                            <h1>SET ÁO BLAZER KẺ VÀ QUẦN LỬNG</h1>
+                            <p>70.0000 <sup>đ</sup></p>
+                        </div>
+                        <div class="category-right-content-item">
+                            <img src="/src/images/sp3.jpeg" alt="">
+                            <h1>SET ÁO BLAZER KẺ VÀ QUẦN LỬNG</h1>
+                            <p>70.0000 <sup>đ</sup></p>
+                        </div>
+                        <div class="category-right-content-item">
+                            <img src="/src/images/sp4.jpg" alt="">
+                            <h1>SET ÁO BLAZER KẺ VÀ QUẦN LỬNG</h1>
+                            <p>70.0000 <sup>đ</sup></p>
+                        </div>
+                        <div class="category-right-content-item">
+                            <img src="/src/images/sp4.jpg" alt="">
+                            <h1>SET ÁO BLAZER KẺ VÀ QUẦN LỬNG</h1>
+                            <p>70.0000 <sup>đ</sup></p>
+                        </div>
+                        <div class="category-right-content-item">
+                            <img src="/src/images/sp4.jpg" alt="">
+                            <h1>SET ÁO BLAZER KẺ VÀ QUẦN LỬNG</h1>
+                            <p>70.0000 <sup>đ</sup></p>
+                        </div>
+                    </div>
+                    <div class="category-right-bottom row">
+                        <div class="category-right-bottom-item">
+                            <p>Hiện thị 2 <span> | </span>4 sản phẩm</p>
+                        </div>
+                        <div class="category-right-bottom-item">
+                            <p><span>&#8606;</span>1 2 3 4 5 <span>&#8608;</span>Trang cuối</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="slide">
-                    <img class="main-img" src="/src/images/Backgroud2.jpg" >
-                </div>
-                <div class="slide">
-                    <img class="main-img" src="/src/images/Backgroud3.jpg" >
-                </div>
-             
-            </div>
-            <div class="Naviggation-manual">
-                <label for="img-1" class="manual-btn"></label>
-                <label for="img-2" class="manual-btn"></label>
-                 <label for="img-3" class="manual-btn"></label> 
             </div>
         </div>
     </section>
-    
-    <section class="footer">
      <section class="app-container">
         <p>Tải ứng dụng IVY moda</p>
         <div class="app-google">
-            <img src="/src/images/Appstore.png" >
-            <img src="/src/images/Googleplay.png" alt="">
+            <img src="images/Appstore.png" >
+            <img src="images/Googleplay.png" alt="">
         </div>
         <p>Nhận bản tin từ IVY moda</p>
         <input type="text" placeholder="Nhập email của bạn...">
      </section>
      <div class="footer-top">
-        <li><a href=""><img src="/src/images/DaThongBaoVoiBoConggThuong.png" ></a></li>
+        <li><a href=""><img src="images/DaThongBaoVoiBoConggThuong.png" ></a></li>
         <li><a href=""></a>Liên Hệ</li>
         <li><a href=""></a>Tuyển Dụng</li>
         <li><a href=""></a>Giới thiệu</li>
@@ -130,6 +175,14 @@
                     </div>
                 </label>
                 <input id="login-account"type="text" required="" class="modal-login-input js-modal-account-login-input" placeholder="">
+                <div class="login-account-warning js-login-account-warning">
+                    <div class="icon-login-account-warning">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                    </div>
+                    <div class="">
+                        <p>Hãy nhập tài khoản</p>
+                    </div>
+                </div>
                 <label for="login-password" class="modal-login-label">
                     <div class="iicon-modal-login-account">
                         <i class="fa-solid fa-lock"></i>
@@ -187,7 +240,7 @@
                         <p>Mật khẩu</p>
                     </div>
                 </label>
-                <input id="register-password-recheck" type="password" required="" class="modal-register-input" placeholder="">
+                <input id="register-password" type="password" required="" class="modal-register-input" placeholder="">
                 <label for="register-password" class="modal-register-label">
                     <div class="iicon-modal-register-account">
                         <i class="fa-solid fa-lock"></i>
@@ -205,11 +258,11 @@
                         <p>Địa chỉ email</p>
                     </div>
                 </label>
-                <input id="register-email" type="email" required="" class="modal-register-input" placeholder="">
+                <input id="register-password" type="email" required="" class="modal-register-input" placeholder="">
                 <div class="icon-login-other">
                 </div>
                 <div class="register-ok-flex">
-                    <button class="register-submit" id="register-ok">
+                    <button id="register-ok">
                         <i class="fa fa-arrow-right"></i>
                     </button>
                 </div>
